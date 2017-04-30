@@ -7,14 +7,16 @@ const envName = process.env.ENV_NAME || 'development';
 dotEnv.config({
   path: path.join(__dirname, `${envName}.env`),
 });
+
 const config = {
-  // Api URL
+  // Api endpoint.
   APIURL: process.env.TRIVIA_API_URL,
   // Server configuration details.
   server: {
     port: process.env.TRIVIA_API_PORT,
     host: process.env.TRIVIA_API_HOST,
   },
+  // Wreck API options.
   wreck: {
     json: 'force',
     timeout: 20 * 1000,

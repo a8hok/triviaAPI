@@ -1,12 +1,19 @@
-const Boom = require('boom');
 const memoizee = require('memoizee');
 const fecther = require('../data/fetch-from-travia');
 
 // Test builder.
 function testBuilder(request, reply) {
   const cachedFn = memoizee(fecther);
-  cachedFn().then();
-  reply(Boom.notImplemented());
+  cachedFn().then(html =>
+     reply(html).header('content-type', 'text/html; charset=utf-8'),
+  )
+  .catch((err) => {
+    const errorMessage = err && err.message;
+
+    reply(`${errorMessage}\n`)
+      .header('content-type', 'text/plain; charset=utf-8')
+      .code(500);
+  });
 }
 
 // Application start here.
