@@ -5,7 +5,7 @@ const Hapi = require('hapi');
 
 // Internal module dependency.
 const config = require('./src/config');
-const testBuilder = require('./src/plugins/testBuilder');
+const testBuilder = require('./src/plugins/quizBuilder');
 
 const server = new Hapi.Server();
 
@@ -15,7 +15,7 @@ server.connection({
   port: config.server.port,
 });
 
-// Concatenate all plugins.
+// Concatenate plugins.
 let plugins = [];
 plugins = plugins.concat(testBuilder);
 
