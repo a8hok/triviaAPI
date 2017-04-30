@@ -4,8 +4,8 @@
 const Hapi = require('hapi');
 
 // Internal module dependency.
-const config = require('./config');
-const testBuilder = require('./plugins/testBuilder');
+const config = require('./src/config');
+const testBuilder = require('./src/plugins/testBuilder');
 
 const server = new Hapi.Server();
 

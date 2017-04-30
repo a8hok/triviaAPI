@@ -4,6 +4,8 @@ const fecther = require('../data/fetch-from-travia');
 
 // Test builder.
 function testBuilder(request, reply) {
+  const cachedFn = memoizee(fecther);
+  cachedFn().then();
   reply(Boom.notImplemented());
 }
 
