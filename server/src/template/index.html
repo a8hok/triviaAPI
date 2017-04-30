@@ -3,6 +3,20 @@
     <title>online test</title>
   </head>
   <body>
-    {{data}}
+    <div>
+      {{#forEach data}}
+        <div>
+          <div>{{ decodeHtml question}}</div>
+            <form>
+              {{#each incorrect_answers}}
+                <div><input type="radio">{{decodeHtml this}}</input></div>
+              {{/each}}  
+              <div><input type="radio">{{decodeHtml correct_answer}}</input></div>
+             
+            <span><b>Correct Answer : {{decodeHtml correct_answer}}</b></span>
+            </form>
+          </div>
+        {{/forEach}}
+    </div>
   </body>
 </html>
