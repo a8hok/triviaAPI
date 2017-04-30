@@ -1,2 +1,2 @@
 # triviyaAPI
- HapiJS, ReactJS, Dev configuration(eslint, pre-commit, Mocha, AWS, Jenkins)
+ HapiJS, Dev configuration(eslint, pre-commit, Mocha, AWS, Jenkins)

@@ -4,9 +4,9 @@ const fecther = require('../data/fetch-from-travia');
 // Test builder.
 function testBuilder(request, reply) {
   const cachedFn = memoizee(fecther);
-  cachedFn().then(html =>
-     reply(html).header('content-type', 'text/html; charset=utf-8'),
-  )
+  cachedFn().then((html) => {
+    return reply(html).header('content-type', 'text/html; charset=utf-8');
+  })
   .catch((err) => {
     const errorMessage = err && err.message;
 
