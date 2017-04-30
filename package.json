@@ -15,9 +15,12 @@
   "dependencies": {
     "boom": "^4.3.1",
     "dotenv": "^4.0.0",
+    "handlebars": "^4.0.7",
     "hapi": "^16.1.1",
     "html-entities": "^1.2.1",
-    "memoizee": "^0.4.4"
+    "memoizee": "^0.4.4",
+    "url": "^0.11.0",
+    "wreck": "^12.1.0"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
