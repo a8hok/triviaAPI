@@ -1,6 +1,6 @@
-{{Description of feature/bugfix here}}
+<!--- Description of feature/bugfix here --->
 
-{{Screenshots of changes, if applicable}}
+<!--- Screenshots of changes, if applicable --->
 
 I have:
 
