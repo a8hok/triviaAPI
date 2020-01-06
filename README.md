@@ -1,2 +1,7 @@
-# triviyaAPI
- HapiJS, Dev configuration(eslint, pre-commit, Mocha, AWS, Jenkins)
+# Trivia API integration using HapiJS and HandlebarJS
+ 
+ ## TO launch app <br/>
+ > npm install <br/>
+ > npm dev <br/>
+ 
+ [API](https://opentdb.com/api_config.php)
