@@ -20,7 +20,7 @@
     "handlebars-helpers": "^0.8.2",
     "hapi": "^16.1.1",
     "html-entities": "^1.2.1",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "memoizee": "^0.4.4",
     "url": "^0.11.0",
     "wreck": "^12.1.0"
