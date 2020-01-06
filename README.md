@@ -1,6 +1,6 @@
 # Trivia API integration using HapiJS and HandlebarJS
  
- ** To launch app ** <br/>
+ ### To launch app<br/>
  > npm install <br/>
  > npm dev <br/>
  
